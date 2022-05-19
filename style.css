@@ -1,0 +1,176 @@
+/****** Css Resets *******/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/****** Variables ********/
+:root {
+    --primary-green: #10B981;
+}
+
+/****** Main Styles *******/
+body {
+    background-color: #1C1C1C;
+    display: flex;
+}
+
+main {
+    background-color: #1F2937;
+    width: 550px;
+    height: 550px;
+    margin: auto;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    padding: 118px 52px 46px;
+    font-family: 'Inter', sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+    color: var(--primary-green);
+    font-weight: 800;
+    margin-bottom: 10px;
+    line-height: 1;
+}
+
+h1 span {
+    font-family: 'Karla', sans-serif;
+    color: #fff;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #D5D4D8;
+    line-height: 1.4;
+}
+
+button {
+    margin-top: 50px;
+    background-color: var(--primary-green);
+    padding: 9px 17px;
+    padding-left: 47px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    cursor: pointer;
+    background-image: url("images/Icon.png");
+    background-repeat: no-repeat;
+    background-position: 10% center;
+}
+
+.length {
+    color: var(--primary-green);
+    padding: 9px 17px;
+    background-color: #D5D4D8;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-left: 10px;
+    padding-right: 4px;
+    letter-spacing: .5px;
+}
+
+.length::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--primary-green);
+    opacity: 1; /* Firefox */
+  }
+
+.generated-passwords {
+    display: flex;
+    width: 446px;
+    gap: 24px;
+    flex-wrap: wrap;
+    padding-top: 35px;
+    margin-top: 35px;
+    border-top: 1px solid #2F3E53;
+}
+
+.generated-passwords input {
+    color: #202B3C;
+    background-color: #273549;
+    border-radius: 6px;
+    font-weight: 500;
+    text-align: center;
+    flex: 0 0 206px;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+}
+
+.generated-passwords input:focus-visible {
+    outline: none;
+}
+
+.generated-passwords .filled {
+    color: var(--primary-green);
+    font-size: 16px;
+}
+
+.msg {
+    background-color: var(--primary-green);
+    display: inline-block;
+    padding: 5px 30px;
+    border-radius: 6px;
+    font-size: 14px;
+    letter-spacing: .8px;
+    position: fixed;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    display: none;
+}
+
+.show {
+    display: block;
+}
